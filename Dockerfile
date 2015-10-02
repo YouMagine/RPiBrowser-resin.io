@@ -14,7 +14,8 @@ RUN apt-get update \
     ttf-mscorefonts-installer \
     x11-xserver-utils \
     xinit \
-    xwit
+    xwit \
+    openssh-server
 
 RUN mkdir -p /usr/src/app \
   && ln -s /usr/src/app /app

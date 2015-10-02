@@ -6,6 +6,10 @@ ldconfig
 
 echo $URL > /usr/src/app/url.txt
 echo $CHROMIUM_ARGS > /usr/src/app/chromium_args.txt
+mkdir ~/.ssh 2>&1
+echo $SSH_KEY1 > ~/.ssh/authorized_keys
+echo $SSH_KEY2 >> ~/.ssh/authorized_keys
+echo $SSH_KEY3 >> ~/.ssh/authorized_keys
 
 useradd -m pi
 
