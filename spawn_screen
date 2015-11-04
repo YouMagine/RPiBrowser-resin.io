@@ -6,6 +6,8 @@ ldconfig
 
 echo $URL > /usr/src/app/url.txt
 echo $CHROMIUM_ARGS > /usr/src/app/chromium_args.txt
+# e.g. "-use_titlebar no -use_cursor no"
+echo $MATCHBOX_ARGS > /usr/src/app/matchbox_args.txt
 
 # SSH server
 sudo update-rc.d ssh defaults

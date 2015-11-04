@@ -28,7 +28,7 @@ while true; do
 	xwit -root -warp $( cat /sys/module/*fb*/parameters/fbwidth ) $( cat /sys/module/*fb*/parameters/fbheight )
 
 	# Start the window manager (remove "-use_cursor no" if you actually want mouse interaction)
-	matchbox-window-manager -use_titlebar no -use_cursor no &
+	matchbox-window-manager $( cat /usr/src/app/matchbox_args.txt ) &
 
 	# Start the browser (See http://peter.sh/experiments/chromium-command-line-switches/)
 	chromium  --app=$( cat /usr/src/app/url.txt ) $( cat /usr/src/app/chromium_args.txt )
